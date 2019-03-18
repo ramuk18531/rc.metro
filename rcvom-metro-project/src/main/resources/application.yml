@@ -2,13 +2,12 @@ spring:
     profiles:
         active: dev
     datasource:
-            dataSourceClassName: org.h2.jdbcx.JdbcDataSource
-            url: jdbc:h2:mem:myDb;DB_CLOSE_DELAY=-1
+            dataSourceClassName: org.h2.Driver
+            url: jdbc:h2:mem:TEST1;MVCC=true;DB_CLOSE_DELAY=-1;MODE=Oracle
             databaseName:
             serverName:
-            username:
+            username: sa
             password:
-  
     jpa:
         database-platform: org.hibernate.dialect.H2Dialect
         database: H2
@@ -21,3 +20,11 @@ spring:
         properties:
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: true
+            
+  
+              
+spring.h2.console.enabled: true
+
+spring.h2.console.path: /h2-console
+
+

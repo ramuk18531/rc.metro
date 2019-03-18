@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.rc.metro.model;
+package com.rk.metro.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
